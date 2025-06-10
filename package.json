@@ -1,5 +1,5 @@
 {
-  "name": "zhu-element",
+  "name": "@zhu-element/workspace",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -27,11 +27,11 @@
     "vue-tsc": "^1.8.27"
   },
   "dependencies": {
+        "zhu-element": "workspace:*",
     "@zhu-element/hooks": "workspace:*",
     "@zhu-element/theme": "workspace:*",
     "@zhu-element/utils": "workspace:*",
     "lodash-es": "^4.17.21",
-    "vue": "^3.5.15",
-    "zhu-element": "workspace:*"
+    "vue": "^3.5.15"
   }
 }
