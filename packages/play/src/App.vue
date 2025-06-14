@@ -2,5 +2,5 @@
 </script>
 
 <template>
-  <z-button></z-button>
+  <z-button>123</z-button>
 </template>
