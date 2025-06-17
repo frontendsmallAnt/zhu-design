@@ -17,7 +17,7 @@ module.exports = {
         'build', // 打包
       ],
     ],
-    'type-case': [2, 'always', 'lower'], // 提交类型必须是小写（如 feat, fix）2 表示错误级别（会阻止提交）always 表示始终执行此规则
+    'type-case': [2, 'always', 'lowerCase'], // 提交类型必须是小写（如 feat, fix）2 表示错误级别（会阻止提交）always 表示始终执行此规则
     'type-empty': [2, 'never'], // 提交类型不能为空 never 表示不允许为空
     'scope-empty': [0], // 是否允许范围为空（如 feat(scope)）0 表示不限制
     'scope-case': [0], // 范围的大小写规则 0 表示不检查

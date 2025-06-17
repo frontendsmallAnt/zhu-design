@@ -12,7 +12,13 @@
     "prepare": "husky",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
     "lint:style": "stylelint **/*.{css,less,scss,vue} --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "commit": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
   },
   "keywords": [],
   "author": "",
@@ -21,6 +27,7 @@
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
+    "@commitlint/cz-commitlint": "^18.4.3",
     "@types/lodash-es": "^4.17.12",
     "@types/node": "^20.17.50",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
@@ -30,10 +37,12 @@
     "@vue/eslint-config-prettier": "^8.0.0",
     "@vue/eslint-config-typescript": "^12.0.0",
     "@vue/tsconfig": "^0.5.1",
+    "commitizen": "^4.3.0",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-vue": "^9.0.0",
+    "git-cz": "^4.9.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "postcss-color-mix": "^1.1.0",
@@ -52,11 +61,11 @@
     "vue-tsc": "^1.8.27"
   },
   "dependencies": {
-    "zhu-element": "workspace:*",
     "@zhu-element/hooks": "workspace:*",
     "@zhu-element/theme": "workspace:*",
     "@zhu-element/utils": "workspace:*",
     "lodash-es": "^4.17.21",
-    "vue": "^3.5.15"
+    "vue": "^3.5.15",
+    "zhu-element": "workspace:*"
   }
 }
